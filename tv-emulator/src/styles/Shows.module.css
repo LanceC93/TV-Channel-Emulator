@@ -6,16 +6,35 @@
     gap: 0;
     width: 100%;
     height: 100%;
+    overflow-x: scroll;
+    overscroll-behavior: none;
+    scrollbar-width: none;  /* Firefox */
+}
+
+.shows::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari, Edge */
+}
+
+.time {
+    width: calc(100% / 8);
+    height: 100%;
+    box-sizing: border-box;
+    border-right: 1px solid black;
 }
 
 .times {
     background-color: red;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+    width: 200%;
     height: 10%;
 }
 
 .names {
     background-color: blue;
-    width: 100%;
+    width: 200%;
     height: 90%;
 }
