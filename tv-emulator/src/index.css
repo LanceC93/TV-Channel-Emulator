@@ -1,0 +1,10 @@
+/* Ensure the page and root element fill the viewport */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Make sure body at least equals the viewport height */
+body {
+  min-height: 100vh;
+}
